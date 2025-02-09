@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Timer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Yoga Timer</h1>
+    <input type="number" id="minutes" placeholder="Enter minutes">
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+    <p>Time Left: <span id="time-left">0</span> seconds</p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
